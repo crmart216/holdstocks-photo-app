@@ -1,5 +1,6 @@
 const express = require("express");
 const router = require("./loader/router.js");
+require("dotenv").config();
 const path = require("path");
 
 
