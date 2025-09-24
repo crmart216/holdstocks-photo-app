@@ -5,7 +5,9 @@ const path = require("path");
 
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+//un-comment this line to run on port 80
+//const PORT = process.env.PORT || 3000;
+const PORT = 3000;
 
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
@@ -17,6 +19,6 @@ app.use('/', router);
 
 
 app.listen(PORT, () => {
-    console.log(`Serving ./public at http://localhost:${PORT}`);
+    console.log(`Serving at http://localhost:${PORT}`);
 });
 
